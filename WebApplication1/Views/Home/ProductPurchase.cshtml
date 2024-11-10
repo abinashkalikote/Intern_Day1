@@ -1,0 +1,15 @@
+﻿@model ProductPurchaseVm
+@{
+    ViewData["Title"] = "Product Purchase";
+}
+
+<h1>
+    Product Purchase
+    <hr/>
+    <form method="post">
+        <input type="text" asp-for="ItemName"/>
+        <input type="number" asp-for="Quantity"/>
+
+        <button type="submit">Purchase</button>
+    </form>
+</h1>
